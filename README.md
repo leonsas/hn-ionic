@@ -1,5 +1,5 @@
 ## HN Ionic
-This project is a [Hacker News][1] reader built with the new [Ionic Framework][2]. It was mainly a toy project to start learning AngularJS and check out Ionic to evaluate for use in a bigger project thats coming up.
+This project is a [Hacker News](http://news.ycombinator.com/) reader built with the new [Ionic Framework](http://ionicframework.com/). It was mainly a toy project to start learning AngularJS and check out Ionic to evaluate for use in a bigger project thats coming up.
 
 Built on top of Ionic, this is a hybrid HTML5 app meant to be run via phonegap or cordova, and not as a web app.
 I've tested it on a Nexus 4, but should work on most modern devices and iDevices.
@@ -21,8 +21,5 @@ I just got around to implement the most basic features.
 <img src="http://leonsas.github.io/HNIonicComments.png" alt="Comment Tab" height="600" width="360">
 
 ***
-Currently using the unofficial HN api [node-hnapi][3].
+Currently using the unofficial HN api [node-hnapi](http://node-hnapi.herokuapp.com/).
 
-[1]:	news.ycombinator.com
-[2]:	ionicframework.com
-[3]:	node-hnapi.herokuapp.com
