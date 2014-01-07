@@ -21,7 +21,7 @@ I just got around to implement the most basic features.
 <img src="http://leonsas.github.io/HNIonicComments.png" alt="Comment Tab" height="600" width="360">
 
 ***
-Currently using the unofficial HN api [node-hnapi](http://node-hnapi.herokuapp.com/)[3].
+Currently using the unofficial HN api [node-hnapi][3].
 
 [1]:	news.ycombinator.com
 [2]:	ionicframework.com
