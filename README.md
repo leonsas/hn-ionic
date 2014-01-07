@@ -15,7 +15,13 @@ I just got around to implement the most basic features.
 - Browse front page articles within the app.
 - Read comments of front page articles.
 
-Currently using an unofficial HN api [http://node-hnapi.herokuapp.com/][3].
+#### Screenshots
+<img src="http://leonsas.github.io/HNIonicFrontPage.png" alt="Front page" height="600" width="360">
+<span/>
+<img src="http://leonsas.github.io/HNIonicComments.png" alt="Comment Tab" height="600" width="360">
+
+***
+Currently using the unofficial HN api [node-hnapi](http://node-hnapi.herokuapp.com/)[3].
 
 [1]:	news.ycombinator.com
 [2]:	ionicframework.com
