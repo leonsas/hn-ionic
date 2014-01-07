@@ -25,4 +25,4 @@ Currently using the unofficial HN api [node-hnapi][3].
 
 [1]:	news.ycombinator.com
 [2]:	ionicframework.com
-[3]:	http://node-hnapi.herokuapp.com/
+[3]:	node-hnapi.herokuapp.com
