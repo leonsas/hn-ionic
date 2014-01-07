@@ -1,0 +1,74 @@
+#splash-page {
+  background-color: white;
+}
+#logo {
+  background: url('../img/ionic.png') no-repeat transparent;
+  width: 128px;
+  height: 128px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -64px 0px 0px -64px;
+}
+
+.comment-content p{
+    white-space: normal;
+}
+
+.comment{
+    border-width: 0px 0px 0px 1px;
+}
+
+.nav-title-slide-ios7.hnorange.bar.bar-header.nav-bar.ng-isolate-scope.bar-positive{
+    background-color: #cc5200;
+    background-image: linear-gradient(0deg, #cc5200, #ccaa00 50%, transparent 50%);
+}
+
+.tabs-hnorange{
+    background-color: #cc5200;
+    background-image: linear-gradient(0deg, #cc5200, #ccaa00 50%, transparent 50%);
+}
+
+.story{
+    text-decoration: none;
+}
+
+.story .title{
+    white-space: normal;
+    margin-bottom: 0px;
+    color: #110700;
+    line-height: 100%;
+}
+
+.story .info{
+    color: #555;
+    font-size: 70%;
+}
+
+.tab-item{
+    color: #fff;
+}
+
+/* to avoid the comment icon getting hyperlink's color */
+button i{
+    color: #666;
+}
+
+.item.comment{
+    padding: 5px 15px 5px 15px;
+}
+
+.comment .info{
+    margin-bottom: 1px;
+    font-size: 70%;
+}
+
+.story-container{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+.scroll{
+    height:100%;
+}

@@ -1,0 +1,174 @@
+/*
+	Georgia
+
+	Demo css to show basic, blog-like styling
+
+	Visit http://www.ulyssesapp.com/styles for full reference
+
+*/
+
+
+
+body {
+  text-align:center; 
+  color:#000; 
+  font-family:georgia, serif; 
+  font-size:120%; 
+  line-height:1.6;
+  margin:0; 
+  padding:2em 2em 5em; 
+  background:rgb(253, 253, 253);
+  margin:auto;
+  max-width:33em;
+  color:rgb(10, 10, 10);
+  } 
+
+a {outline:none !important; font-weight:bold; text-decoration:none;}
+a:link {color:#c00;}
+a:visited {color:#606;}
+a:hover {color:#606;}
+a:active {color:#900; outline:none;}
+
+h1 {
+  font-size:400%;
+  line-height:1.2;
+  font-style:normal;
+  margin:2.5em 0 1em;
+}
+
+h2 {
+  font-weight:bold;
+  font-size:200%;
+  line-height: 140%;
+  margin:1.5em 0 0.75em;
+}
+
+h3 {
+  font-weight:normal;
+  text-transform:uppercase;
+  font-size:150%;
+  letter-spacing:0.15em;
+  margin:1.75em 0 0.75em;
+}
+
+h4 {
+  font-weight:normal;
+  font-size:150%;
+  letter-spacing:0.1em;
+  margin:1.5em 0 0.75em;
+}
+
+h5 {
+  font-weight:normal;
+  font-style:italic;
+  font-size:150%;
+  margin:1.5em 0 0.75em;
+}
+
+h6 {
+  font-weight:bold;
+  font-size:100%;
+  letter-spacing:0.1em;
+  margin:1.5em 0 0.75em;
+}
+
+p {
+  text-align:left;
+  font-size:100%;
+  margin:1em 0 0;
+}
+
+/*
+h1 + p {
+  font-size:150%;
+  margin:1em 0;
+}
+*/
+
+p + p {
+  margin:0;
+  text-indent:1.5em;
+}
+
+h1 + p {
+  text-indent:0;
+}
+
+p + ul, p + ol, p + dl {margin-bottom:1.5em;}
+
+figure {margin: 2em 0 1.5em 0;}
+figure img {width: 100%;border: 1px solid #ccc;}
+figcaption {font-size: 66%;padding: 1em; padding-top: 0.5em;color: #aaa;}
+
+blockquote {border-left:5px solid #eee; padding-left:1.5em; margin:1em 0;}
+blockquote p {text-indent: 0 !important;font-style: italic;}
+blockquote small {display:block; line-height:1.7em;}
+
+ul, ol, dl {
+  text-align:left;
+  }
+
+ul, ol {
+  padding-left: 1.2em;
+}
+
+ul li, ol li {
+	padding-left: 0.3em;
+    margin-top: 0.6em;
+}
+
+li p {margin-top: 0px; text-indent: 0em;}
+li {margin-bottom: 0.6em;}
+
+code {font-family: Menlo, monospace; font-size:80%;}
+p > code {padding:0.2em 0.4em; background:#eee;}
+pre {text-align:left; overflow-x: scroll; background: #eee; padding: 10pt 20pt; border-radius: 5pt;}
+
+hr {border: none; margin:1.5em 0 1.5em;font-size:200%;color: #ddd; height: 1em;}
+hr:after {content: "❧"}
+
+h1 + hr {margin:-0.5em 0 1.5em; font-size: 400%;}
+
+ol#footnotes { margin-top: 4.5em;border-top: 1px solid #eee; padding-top: 1em; font-size: 80%;padding-left: 1.5em;}
+
+ol#footnotes p {text-indent: 0px;}
+
+figure + p {
+	text-indent: 0em !important;
+}
+
+@keyframes highfade {
+    0% {
+		background-color: none;
+    }
+    20% {
+		background-color: yellow;
+	}
+    100% {
+		background-color: none;
+    }
+}
+
+@-webkit-keyframes highfade {
+    0% {
+		background-color: none;
+    }
+    20% {
+		background-color: yellow;
+	}
+    100% {
+		background-color: none;
+    }
+}
+
+a:target, ol#footnotes li:target, sup a:target  {
+    animation-name: highfade;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-name: highfade;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+}
+

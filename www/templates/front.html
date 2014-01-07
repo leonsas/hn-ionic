@@ -1,0 +1,12 @@
+<nav-page id="app-page" title="'Front Page'">
+    <content has-header="true" has-tabs="false" ng-controller="StoriesCtrl">
+        <div class="list">
+            <a class="item story-container" ng-href="#/story/{{story.id}}" ng-repeat="story in stories">
+              <div class="story">
+                <p class="title">{{story.title}}</p>
+                <p class="info">{{story.points}} pts by {{story.user}} {{story.time_ago}} | {{story.domain}}</p>
+              </div>
+        </a>
+        </div>
+    </content>
+</nav-page>

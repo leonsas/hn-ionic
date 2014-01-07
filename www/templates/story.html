@@ -1,0 +1,47 @@
+
+<script type="text/ng-template"  id="sample_renderer.html">
+    {{data.name}}
+    <button ng-click="add(data)">Add node</button>
+    <button ng-click="delete(data)" ng-show="data.nodes.length > 0">Delete nodes</button>
+    <ul>
+        <li ng-repeat="data in data.nodes" ng-include="'tree_item_renderer.html'"></li>
+    </ul>
+</script>
+
+
+<script type="text/ng-template"  id="comment_renderer.html">
+    <div class="item comment">
+        <p class="info">{{comment.user}}   {{comment.time_ago}} </p>
+        <div ng-bind-html="comment.content" class="comment-content"></div>
+        <ul>
+            <li ng-repeat="comment in comment.comments" ng-include="'comment_renderer.html'"></li>
+        </ul>
+    </div>
+</script>
+
+
+<nav-page title="story.title" back-button-type="button-icon" back-button-icon="icon ion-arrow-left-c">
+
+<tabs tabs-type="tabs-icon-only" tabs-style="tabs-hnorange" animate-nav="false" controller="StoryCtrl">
+
+    <tab icon-on="icon ion-ios7-world" icon-off="icon ion-ios7-world-outline">
+        <content has-header="true" padding="true">
+            <iframe src="{{story.url}}" width="100%" height="100%"></iframe>
+        </content>
+    </tab>
+
+  <tab icon-on="icon ion-ios7-chatboxes" icon-off="icon ion-ios7-chatboxes-outline">
+    <content has-header="true" padding="false">
+
+      <ul>
+        <li ng-repeat="comment in story.comments">
+            <ng-include src="'comment_renderer.html'"></ng-include>
+        </li>
+      </ul>
+    </content>
+  </tab>
+
+</tabs>
+</nav-page>
+
+
